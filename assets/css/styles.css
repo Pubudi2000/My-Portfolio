@@ -1,12 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  
+  
   --first-color: hsl(207, 65%, 65%);
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
@@ -14,14 +13,14 @@
   --body-color: hsl(207, 4%, 99%);
   --container-color: hsl(207, 4%, 95%);
 
-  /* Change the first number */
-  /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
+  
+  
   --gradient-color: linear-gradient(180deg,
                       hsla(207, 48%, 72%, 0),
                       hsla(207, 65%, 65%, 1));
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  
+  
   --body-font: 'Roboto', sans-serif;
   --title-font: 'Lora', serif;
   --biggest-font-size: 1.5rem;
@@ -33,17 +32,17 @@
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
-  /*========== Font weight ==========*/
+  
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  
   --z-normal: 1;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3.0rem;
@@ -57,7 +56,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -73,7 +72,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: background .4s; /*for dark mode animation*/
+  transition: background .4s;
 }
 
 h1, h2, h3 {
@@ -95,7 +94,7 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+
 .nav__buttons{
   display: flex;
   align-items: center;
@@ -109,7 +108,7 @@ img {
   transition: color .3s;
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme{
   --title-color: hsl(207, 4%, 95%);
   --text-color: hsl(207, 4%, 65%);
@@ -117,10 +116,10 @@ body.dark-theme{
   --container-color: hsl(207, 4%, 12%);
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
+
+  
+    
+
 .dark-theme .nav,
 .dark-theme .nav__menu,
 .dark-theme .scrollup{
@@ -150,7 +149,7 @@ body.dark-theme{
   background-color: hsl(207, 4%, 35%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
@@ -189,10 +188,10 @@ body.dark-theme{
 }
 
 .main {
-  overflow: hidden; /* For animation */
+  overflow: hidden;
 }
 
-/*=============== HEADER & NAV ===============*/
+
 .header{
   width: 100%;
   position: fixed;
@@ -276,17 +275,17 @@ body.dark-theme{
   cursor: pointer;
 }
 
-/* Show menu */
+
 .show-menu{
   bottom: 2rem;
 }
 
-/* Active link */
+
 .active-link{
   color: var(--title-color);
 }
 
-/*=============== HOME ===============*/
+
 .home__container{
   row-gap: 4rem;
   padding-top: 2rem;
@@ -394,7 +393,7 @@ body.dark-theme{
   font-weight: var(--font-semi-bold);
 }
 
-/*=============== SKILLS ===============*/
+
 .skills__container{
   row-gap: 3.5rem;
 }
@@ -454,7 +453,7 @@ body.dark-theme{
   color: var(--text-color-light);
 }
 
-/* Animation skills */
+
 .skills__blob:hover img{
   animation: bounce-skills .6s;
 }
@@ -477,7 +476,7 @@ body.dark-theme{
   }
 }
 
-/*=============== QUALIFICATION ===============*/
+
 .qualification{
   position: relative;
 }
@@ -531,7 +530,7 @@ body.dark-theme{
   opacity: .1;
 }
 
-/*=============== ACHIEVEMENTS ===============*/
+
 .achievements__container{
   row-gap: 2.5rem;
   justify-content: center;
@@ -584,7 +583,7 @@ body.dark-theme{
   opacity: 1;
 }
 
-/*=============== HOBBIES ===============*/
+
 .hobbies__container{
   overflow: initial;
 }
@@ -628,7 +627,7 @@ body.dark-theme{
   transform: translateX(.25rem);
 }
 
-/* Swiper class */
+
 .hobbies__container .swiper-button-next::after,
 .hobbies__container .swiper-button-prev::after{
   content: '';
@@ -670,13 +669,15 @@ body.dark-theme{
   background-color: var(--title-color);
 }
 
-/*=============== TESTIMONIAL ===============*/
 
 
-/* Swiper class */
 
 
-/*=============== CONTACT ===============*/
+
+
+
+
+
 .contact__container{
   row-gap: 3.5rem;
 }
@@ -809,7 +810,7 @@ body.dark-theme{
   left: 1.5rem;
 }
 
-/* Status color */
+
 .color-red{
   color: hsl(4, 71%, 50%);
 }
@@ -818,7 +819,7 @@ body.dark-theme{
   color: hsl(207, 56%, 45%);
 }
 
-/*=============== FOOTER ===============*/
+
 .footer__container{
   padding: 3rem 0 7rem;
   text-align: center;
@@ -870,7 +871,7 @@ body.dark-theme{
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar{
   width: 0.6rem;
   border-radius: .5rem;
@@ -886,7 +887,7 @@ body.dark-theme{
   background-color: hsl(207, 4%, 55%);
 }
 
-/*=============== SCROLL UP ===============*/
+
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -906,13 +907,13 @@ body.dark-theme{
   transform: translateY(-.25rem);
 }
 
-/* Show Scroll Up*/
+
 .show-scroll{
   bottom: 7.5rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
+
 @media screen and (max-width: 340px){
 
   .container{
@@ -938,7 +939,7 @@ body.dark-theme{
 
 }
 
-/* For medium devices */
+
 @media screen and (min-width: 576px){
 
   .nav,
@@ -1024,7 +1025,7 @@ body.dark-theme{
   
 }
 
-/* For large devices */
+
 @media screen and (min-width: 1023px){
 
   .header{
@@ -1240,28 +1241,28 @@ body.dark-theme{
     border-radius: 8.25rem;
   }
 
-  .projects__container{
+  .hobbies__container{
     width: 900px;
   }
 
-  .projects__container .swiper-button-prev,
-  .projects__container .swiper-button-next{
+  .hobbies__container .swiper-button-prev,
+  .hobbies__container .swiper-button-next{
     font-size: 3rem;
   }
 
-  .projects__container .swiper-button-prev{
+  .hobbies__container .swiper-button-prev{
     left: -1rem;
   }
 
-  .projects__container .swiper-button-next{
+  .hobbies__container .swiper-button-next{
     right: -1rem;
   }
 
-  .projects__container .swiper-slide{
+  .hobbies__container .swiper-slide{
     margin-bottom: 6.5rem;
   }
 
-  .projects__img{
+  .hobbies__img{
     width: 320px;
     margin-bottom: 2rem;
   }
